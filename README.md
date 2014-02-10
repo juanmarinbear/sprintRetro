@@ -13,9 +13,9 @@ Why?
  
 A traditional session has shortcomings:
 
--It is hard to provide anonymous feedback
--Bandwagon effect
--Time constraints
+* It is hard to provide anonymous feedback
+* Bandwagon effect
+* Time constraints
 
 How?
 
