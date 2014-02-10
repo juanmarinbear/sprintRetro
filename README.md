@@ -33,3 +33,19 @@ Firebase
 Express
 
 Price: $15 x Team x Month
+
+Features
+
+-Create SprintRetro (Starts Feedback and Voting loop)
+-Create Topics
+-Provide Feedback on Topics
+-Assess Topics (Vote Up or Down)
+-Assess Feedback (Vote Up or Down)
+-Anonymous Topics and Feedback
+-Close Sprint (Closes Feedback and Voting loop, allows further feedback but not voting)
+-Write Actionable Commitments
+  -Keep Doing
+  -Start Doing
+  -Stop Doing
+-Authentication
+-Moderation
