@@ -19,6 +19,10 @@ retroApp.config(['$routeProvider',
         templateUrl: 'partials/reflectAdmin.html',
         controller: 'ReflectAdminController'
       }).
+      when('/sprint', {
+        templateUrl: 'partials/sprint.html',
+        controller: 'SprintController'
+      }).
       otherwise({
         redirectTo: '/'
       });
