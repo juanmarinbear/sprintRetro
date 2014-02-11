@@ -15,6 +15,10 @@ retroApp.config(['$routeProvider',
         templateUrl: 'partials/reflect.html',
         controller: 'ReflectController'
       }).
+      when('/admin', {
+        templateUrl: 'partials/reflectAdmin.html',
+        controller: 'ReflectAdminController'
+      }).
       otherwise({
         redirectTo: '/'
       });

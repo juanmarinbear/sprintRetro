@@ -1,0 +1,24 @@
+<div class='well row'>
+  <div class="col-md-12">
+    <h3><a href="#/r/:sprint">http://www.sprintretro.io/r/hot-tamale</a></h3>
+  </div>
+  <form class="form form-horizontal" role="form">
+    <div class="form-group col-md-10">
+      <label class="sr-only" for="sprintTitle">Sprint Title</label>
+      <input type="text" class="form-control" id="sprintTitle" placeholder="Sprint Title">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-warning">Close</button>
+    </div>
+  </form>
+  <div class="row" ng-congroller='DatePickerController'>
+    <div class="col-md-6">
+      <p class="input-group">
+        <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min="minDate" max="'2015-06-22'" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+          <span class="input-group-btn">
+            <button class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+      </p>
+    </div>
+  </div>
+</div>
