@@ -13,20 +13,12 @@ retroAppControllers.controller('ReflectController', ['$scope', '$routeParams',
 
 retroAppControllers.controller('ReflectAdminController', ['$scope', '$routeParams',
   function($scope, $routeParams) {
+    $scope.model = { startDate: '', endDate: '' }
   }
 ]);
 
 retroAppControllers.controller('DatePickerController', ['$scope',
   function ($scope) {
-    $scope.today = function() {
-      $scope.dt = new Date();
-    };
-    $scope.today();
-
-    $scope.clear = function () {
-      $scope.dt = null;
-    };
-
     // Disable weekend selection
     $scope.disabled = function(date, mode) {
       return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
@@ -37,11 +29,17 @@ retroAppControllers.controller('DatePickerController', ['$scope',
     };
     $scope.toggleMin();
 
-    $scope.open = function($event) {
+    $scope.openStart = function($event) {
       $event.preventDefault();
       $event.stopPropagation();
+      $scope.openedStart = true;
+    };
 
-      $scope.opened = true;
+
+    $scope.openEnd = function($event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+      $scope.openedEnd = true;
     };
 
     $scope.dateOptions = {
