@@ -23,6 +23,10 @@ retroApp.config(['$routeProvider',
         templateUrl: 'partials/sprint.html',
         controller: 'SprintController'
       }).
+      when('/topic', {
+        templateUrl: 'partials/topic.html',
+        controller: 'TopicController'
+      }).
       otherwise({
         redirectTo: '/'
       });

@@ -22,6 +22,11 @@ retroAppControllers.controller('SprintController', ['$scope', '$routeParams',
   }
 ]);
 
+retroAppControllers.controller('TopicController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+  }
+]);
+
 retroAppControllers.controller('DatePickerController', ['$scope',
   function ($scope) {
     // Disable weekend selection
