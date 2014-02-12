@@ -49,3 +49,4 @@ Features
   * Stop Doing
 * Authentication
 * Moderation
+* Rate your teammates and PM
